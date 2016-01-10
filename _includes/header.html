@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>{{page.title}}</title>
+  <meta name="description" content="San Mateo County locals helping San Mateo County government and local organizations open their data and create meaningful tools" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if page.author %}
+      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+    {% endif %}
+    {% include open-graph.html %}
+    {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
+  <link rel="shortcut icon" href="/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700|Oswald' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/blog/feed.xml">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="#maincontent" class="skiplink">Skip to content</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ site.baseurl }}/">OpenSMC</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ site.baseurl }}/about">About</a></li>
+          <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+          <li><a href="{{ site.baseurl }}/events">Events</a></li>
+          <li><a href="{{ site.baseurl }}/blog">Our Stories</a></li>
+<!--          <li><a href="{{site.baseurl}}/signup">Newsletter</a></li>-->
+          <li class="featured-nav-link"><a href="{{ site.baseurl }}/getstarted">Get Started</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div><!-- /.navbar-collapse -->
+      </nav>
+      <!-- Copy/paste the below 4 lines to add a notification
+        <div class="alert alert-warning" role="alert">
+          <strong>Title</strong>
+          <span>Description</span>
+        </div>
+      PASTE BELOW THIS LINE -->
+      <div style="display:none; padding-top:10px; padding-bottom:10px;" class="alert alert-info check-in-banner" role="alert">
+        <strong>At Hack Night right now?</strong>
+        <span> OpenSMC gets funding based on attendance. Do us a favor and
+          <a class="check-in" href="https://www.codeforamerica.org/brigade/OpenSMC/checkin/?event=Hack+Night&question=What+do+you+most+like+doing+at+Hack+Night%3F">
+            <button class="btn btn-primary" style="color:white;  font-size:18px; font-family: 'Quattrocento', 'Georgia',serif; padding:2px 15px;">Check In!</button></a>
+        </span>
+      </div>
+
+      {% if page.is_front %}
+
+         <!-- Carousel - only using one at the moment
+         ================================================== -->
+         <div id="banner" class="carousel slide" data-ride="carousel" data-interval="10000">
+           <!-- Indicators -->
+           <!-- <ol class="carousel-indicators">
+             <li data-target="#banner" data-slide-to="0" class="active"></li>
+             <li data-target="#banner" data-slide-to="1"></li>
+           </ol> -->
+
+           <div class="carousel-inner">
+
+            <div class="item active">
+              <div class="container">
+                <div class="jumbotron col-md-12">
+                  <h1>We are OpenSMC</h1>
+                  <div class="row">
+                  <p class="lead col-md-10 col-md-offset-1">
+                    We meet every week to hack for change. Join us&mdash;everyone is welcome!
+                  </p>
+                  </div>
+                  <a class="btn btn-lg btn-hack" href="http://www.meetup.com/opensmc/">Join us for an upcoming Weekly Civic Hack Night!</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- <a class="left carousel-control" href="#banner" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#banner" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a> -->
+        </div><!-- /.carousel -->
+
+        {% elsif page.is_ndoch %}
+        <!--National Day of Civic Hacking (NDoCH) pages-->
+
+        <div id="banner" class="banner_ndoch "  >
+          <div class="container">
+            <div class="natban">
+              {% include ndoch_head.html %}
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="navp">
+          <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{{site.baseurl}}/hackforchange/">About</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="{{site.baseurl}}/hackforchange/2015recap">2015 Recap</a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/participate">Participate</a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/projects">Projects</a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/schedule">Schedule</a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/judges">Judging</a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/sponsors">Sponsor </a></li>
+                <li><a href="{{site.baseurl}}/hackforchange/partners">Partner</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{site.baseurl}}/hackforchange/resources">Resources</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+
+    {% else %}
+
+    <div class="title-parent">
+
+      <div class="wide" {% if page.image %} style="background: #000000 url('{{ site.baseurl }}/images/projects/{{ page.image }}') no-repeat top center; background-size: cover;" {% else %} style="background: #cf1b41; color: #FFF;" {% endif %}>
+        <div class="container" id="maincontent" tabindex="-1">
+          <div class="row">
+            <div class="title col-md-7">
+              <h1>{{ page.title }}</h1>
+              <p class="lead">{{page.lead}}</p>
+            </div>
+          </row>
+        </div>
+      </div> <!-- /full-width-image-1 -->
+    </div> <!-- /title-parent -->
+
+    {% endif %}
+
+
+  <div class="container">

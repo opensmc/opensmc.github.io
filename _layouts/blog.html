@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="blog-post">
+  <div class="row">
+    <div class="col-md-8">
+      <article class="wrap" itemscope itemtype="http://schema.org/Article">
+        {% if page.image.feature %}
+        <div class="page-feature">
+          <div class="page-image">
+            <img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image"> {% if page.image.credit %}{% include image-credit.html %}{% endif %}
+          </div>
+          <!-- /.page-image -->
+        </div>
+        <!-- /.page-feature -->
+        {% endif %}
+        <!-- include breadcrumbs.html -->
+        <div class="inner-wrap">
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            {{ content }}
+            <hr />
+            <div class="page-footer">
+              {% if page.categories %}{% include page-author.html %}{% endif %} {% if page.share != false %}{% include share-this.html %}{% endif %}
+
+              {% include page-meta.html %}
+
+              {% include add-edit.html posttype="blog"%}
+            </div>
+            <!-- /.footer -->
+            <aside>
+              {% if page.comments == true %}{% include comments.html %}{% endif %}
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.inner-wrap -->
+      </article>
+      <!-- ./wrap -->
+    </div>
+    <div class="col-md-4">
+      <!-- Stories List Section -->
+      <aside class="panel panel-default">
+        <header class="panel-heading">
+          <h1>Other Stories</h1>
+        </header>
+        <ul class="list-unstyled panel-body">
+          {% for post in site.categories.blog limit 15 %}
+          {% if post.categories contains "blog" and post.path != page.path %}
+          <li>
+            <h4>
+              <small class="pull-right">
+                {{ post.date | date: "%-d %B %Y" }}
+              </small>
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h4>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- /#main -->

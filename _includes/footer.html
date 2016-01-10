@@ -1,0 +1,49 @@
+ 	<!-- FOOTER -->
+  <div class="footer">
+    <p>
+      <a href="http://twitter.com/opensmc" rel="me"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="http://github.com/opensmc" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
+      <span class="pull-right">© OpenSMC 2016 | <a href="https://github.com/opensmc/opensmc.github.io"><i class="icon-github"> </i>Pull requests welcome!</a></span>
+    </p>
+    <p class="text-center">Header photo: <a href="https://en.wikipedia.org/wiki/File:Mount_Diablo_from_SF_Bay_Discovery_Site_10-2-2011_4-24-09_PM.JPG">Mt. Diablo from SF Bay Discovery Site</a> by user Sanfranman59 on Wikimedia Commons</p>
+  </div>
+</div><!-- /.container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+<script type="text/javascript">
+  $(function() {
+    var checkInLinks = [
+      "https://www.codeforamerica.org/brigade/OpenSMC/checkin/?event=Hack+Night&question=What+do+you+most+like+doing+at+Hack+Night%3F",
+      "https://www.codeforamerica.org/brigade/OpenSMC/checkin/?event=Hack+Night&question=Is+this+your+first+Hack+Night%3F",
+      "https://www.codeforamerica.org/brigade/OpenSMC/checkin/?event=Hack+Night&question=How+did+you+hear+about+us%3F",
+      "https://www.codeforamerica.org/brigade/OpenSMC/checkin/?event=Hack+Night&question=What+county+data+would+you+like+to+have+publicly+available%3F"
+    ];
+    var today = new Date().getDay();
+    if(today === 2){
+      var checkInLink = checkInLinks[Math.floor(Math.random()*checkInLinks.length)];
+      $('a.check-in').attr('href', checkInLink);
+      $('.check-in-banner').show();
+    }
+  });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ICanHaz.js/0.10.3/ICanHaz.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70064412-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+{% for script in page.scripts %}
+  <script src="{{ site.baseurl }}/js/{{script}}"></script>
+{% endfor %}
