@@ -288,6 +288,7 @@ table h3 {
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+  white-space: normal;
 }
 
 /* Supporting marketing content */
