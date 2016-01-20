@@ -1,25 +1,20 @@
-jason_lally:
-  name: Jason Lally
-  bio: "Open Data Program Manager for the City and County of San Francisco"
-  gravatar: b0d79f25e915d34f7f06907322ad8060
-
-joseph_tanigawa:
-  name: Joseph Tanigawa
-  bio: "Joseph leads the LocalFreeWeb project team"
-  gravatar: 7a6e46ed3a94c711d31f8ee4e343e958
-
-jesse_biroscak:
-  name: Jesse Biroscak
-  bio: "Brigade Captain"
-  gravatar: 7a6e46ed3a94c711d31f8ee4e343e958
-
-jay_rooney:
-  name: Jay Rooney
+jessica_parsons:
+  name: Jessica Parsons
   bio: ""
-  gravatar: 7a6e46ed3a94c711d31f8ee4e343e958
+  gravatar: 8ca83e0899ab83a035ab61bac706714e
 
-andrew_hyder:
-  name: Andrew Hyder
+john_ridener:
+  name: Johm Ridener
   bio: ""
+  gravatar: 94fe733748ff7b71ed5e81a15829e2f9
+
+michelle_littlefield:
+  name: Michelle Littlefield
+  bio: ""
+  gravatar: ""
+
+robert_harker:
+  name: Robert Harker
+  bio: "Open Data Evangelist and OpenSMC Storyteller"
   gravatar: ""
 
