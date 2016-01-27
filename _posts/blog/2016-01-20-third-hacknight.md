@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: blog
+tags: null
+author: robert_harker
+published: true
 title:  "OpenSMC's third hacknight"
-authors:
-- robert_harker
 date:   2016-01-20 13:30:00
-categories: blog
 ---
 
 Tonight was OpenSMC's third hacknight.
@@ -14,7 +14,6 @@ OpenGov has graciously offered OpenSMC a beautiful meeting space starting with o
 OpenSMC is co-sponsoring two upcoming Hackday events:
 
 * Code Across March 5th Open Data day
-
 * San Mateo County's HackSMC2 on May 21st
 
 Exact locations and times TBA.
