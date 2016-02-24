@@ -55,6 +55,10 @@ table h3 {
   z-index: 20;
 }
 
+.navbar-brand {
+  padding: 10px 15px;
+}
+
 .featured-nav-link {
   background: #E2768D;
 }

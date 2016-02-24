@@ -27,6 +27,12 @@
       var checkInLink = checkInLinks[Math.floor(Math.random()*checkInLinks.length)];
       $('a.check-in').attr('href', checkInLink);
       $('.check-in-banner').show();
+    } else {
+      $('.check-in-banner strong').html('What do you love in your community?');
+      $('.check-in-banner span').html('');
+      $('a.check-in').attr('href', 'https://docs.google.com/forms/d/1GZjLd63msklaPlvXecmzAzmiV17bbCOsu2MvGOcPfxI/viewform');
+      $('a.check-in .btn').html('Tell us!');
+      $('.check-in-banner').show();
     }
   });
 </script>
