@@ -3,7 +3,7 @@ layout: blog
 tags: null
 author: robert_harker
 published: true
-title:  "OpenSMC hacknight - we are getting in our groove"
+title:  "OpenSMC hacknight - we are getting our groove on"
 date:   2016-04-19 18:00:00
 ---
 
