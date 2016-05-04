@@ -20,3 +20,4 @@ We had a returning member who is working on ADA reporting issues.  He wants to w
 Keep calm, code on,
 Robert Harker
 
+Thank you OpenGov for hosting OpenSMC in a great hack space.
