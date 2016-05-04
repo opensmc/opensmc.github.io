@@ -60,7 +60,7 @@ table h3 {
 }
 
 .featured-nav-link {
-  background: #E2768D;
+  background: #00887a;
 }
 
 .navbar-default .navbar-nav>li.featured-nav-link>a {
@@ -308,7 +308,6 @@ table h3 {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
-  .footer {
     padding-left: 0;
     padding-right: 0;
   }
@@ -473,7 +472,7 @@ transition: background 0.2s,border 0.2s;
 }
 
 .btn-hack {
-  background-color: #0a83c5;
+  background-color: #00887a;
   color: #fff;
 }
 
