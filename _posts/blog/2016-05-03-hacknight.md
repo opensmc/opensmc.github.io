@@ -17,7 +17,7 @@ I started a new project, LocalFreeWeb.  This is a Code for San Francisco (CfSF) 
 
 [Hack-SMC](https:hack-smc.org) is in 3 weeks.  We are working on setting up some the datasets needed for some of the hackathon challenges so a project can get to work.  The [Calif. Dept. of Social services](https://secure.dss.ca.gov/CareFacilitySearch/Home/DownloadData) has rich location data for all of the providers it licenses.  Child care, Elder care, in home care.  Maybe an adaption of the Flu Clinic app?
 
-It was great seeing new members again.  Hope to see you back next week.
+It was great seeing new members again.  Hope to see you back next week.  
 Robert Harker
 
 Thank you OpenGov for hosting OpenSMC in a great hack space.

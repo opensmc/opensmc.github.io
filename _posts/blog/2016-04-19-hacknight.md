@@ -23,7 +23,7 @@ There are two upcoming social hacking events:
 
  * [Code for America's (Inter)National Day of Civic Hacking, June 4th.]  
 (http://hack-smc.org/)
- * [OpenSMC will host a hack day in Redwood City.@  Details will follow.]
+ * [OpenSMC will host a hack day in Redwood City.]  Details will follow.
 (https://www.codeforamerica.org/events/national-day-2016)
 
 Thank you OpenGov for hosting OpenSMC in a great hack space.

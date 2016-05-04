@@ -17,7 +17,7 @@ A new, hopefully quick project was started.  LocalFreeWeb.  This is a rebranding
 
 We had a returning member who is working on ADA reporting issues.  He wants to work on providing a way for ADA people to report problems.  We talked about SeeClickFix.  My mother used a walker and there was broken pavement nearby that she had a hard time getting over.  It would have been nice if she could have used an app or a web form to report this problem and get it fixed.  This is what "civic hacking" is all about.
 
-Keep calm, code on,
+Keep calm, code on,  
 Robert Harker
 
 Thank you OpenGov for hosting OpenSMC in a great hack space.
