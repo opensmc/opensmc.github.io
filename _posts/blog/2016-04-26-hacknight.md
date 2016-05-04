@@ -4,7 +4,7 @@ tags: null
 author: robert_harker
 published: true
 title:  "OpenSMC hacknight - we are getting our groove on"
-date:   2016-04-19 18:00:00
+date:   2016-04-26 18:00:00
 ---
 
 Tonight's hacknight again was the core team working steadily on our projects.  Several core members could not make it.  That did not stop the team from working on our projects.  We worked on some tools issues: using git branches and installing Python3.  A comfortable work groove.
