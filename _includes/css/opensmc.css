@@ -89,18 +89,36 @@ table h3 {
 
 /* Carousel base class */
 .carousel {
-  height: 425px;
-  background-image: url({{site.baseurl}}/images/bay-discovery-site-1280.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  margin-bottom: 60px;
+  height: 360px;
+  width: 100%;
+/*  background-image: url({{site.baseurl}}/images/MontaraLighthouseView.png); */
+  background-size: 100%;
+  background-position: bottom; /*Some photos appear mostly blank in the large size*/
+  margin-bottom: 4em;
   color: #fff;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+
+
+/* hide the carousel indicators so that they don't overlap with the button*/
+.carousel-indicators {
+  visibility: hidden;
 }
 
+.carousel-caption {
+  top: 50%;
+  bottom: initial;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+cite {
+  font-size: 0.6em;
+}
+
+.carousel-credit {
+  font-style: italic;
+}
 /* Declare heights because of positioning of img element */
 
 .carousel-inner {
@@ -112,7 +130,7 @@ table h3 {
   this comment for the reason Bootstrap used hidden:
   https://github.com/twbs/bootstrap/issues/6091#issuecomment-10923509
   */
-  overflow-y: auto;
+  overflow-x: auto;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -790,14 +808,15 @@ left: -999em;
 /* CUSTOMIZE THE CAROUSEL NDOCH
 -------------------------------------------------- */
 
-.banner_ndoch {
-  height: 400px;
-  background-image: url({{site.baseurl}}/images/bay-discovery-site-1280.jpg);
+/*.banner_ndoch {
+  height: 240px;
+  background-image: url({{site.baseurl}}/images/MontaraLighthouseView.png);
   background-size: cover;
   background-position: center bottom;
   margin-bottom: 20px;
   color: #fff;
 }
+*/
 
 
 .navp {
