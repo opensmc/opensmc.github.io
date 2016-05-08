@@ -60,7 +60,7 @@ table h3 {
 }
 
 .featured-nav-link {
-  background: #00887a;
+  background: $ocean-turquoise;
 }
 
 .navbar-default .navbar-nav>li.featured-nav-link>a {
@@ -90,7 +90,7 @@ table h3 {
 /* Carousel base class */
 .carousel {
   height: 425px;
-  background-image: url({{site.baseurl}}/images/bay-discovery-site-1280.jpg);
+  background-image: url('/images/bay-discovery-site-1280.jpg');
   background-size: cover;
   background-position: center bottom;
   margin-bottom: 60px;
@@ -307,7 +307,7 @@ table h3 {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
+  .marketing {
     padding-left: 0;
     padding-right: 0;
   }
@@ -472,7 +472,7 @@ transition: background 0.2s,border 0.2s;
 }
 
 .btn-hack {
-  background-color: #00887a;
+  background-color: $ocean-turquoise;
   color: #fff;
 }
 
@@ -792,7 +792,7 @@ left: -999em;
 
 .banner_ndoch {
   height: 400px;
-  background-image: url({{site.baseurl}}/images/bay-discovery-site-1280.jpg);
+  background-image: url('/images/bay-discovery-site-1280.jpg');
   background-size: cover;
   background-position: center bottom;
   margin-bottom: 20px;

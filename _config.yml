@@ -10,6 +10,10 @@ description: A Code for America Brigade in San Mateo County
 owner:
   twitter: opensmc
 
+sass:
+    sass_dir: _sass
+    style: :compressed
+
 prose:
   media: 'images/uploads'
   rooturl: '_posts'
