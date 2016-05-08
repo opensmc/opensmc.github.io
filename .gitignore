@@ -2,3 +2,6 @@
 .DS_Store
 private
 _site/
+.sass-cache
+.c9
+.bundle
