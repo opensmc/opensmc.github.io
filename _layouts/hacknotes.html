@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="blog-post">
+  <div class="row">
+    <div class="col-md-8">
+      <article class="wrap" itemscope itemtype="http://schema.org/Article">
+        {% if page.image.feature %}
+        <div class="page-feature">
+          <div class="page-image">
+            <img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image"> {% if page.image.credit %}{% include image-credit.html %}{% endif %}
+          </div>
+          <!-- /.page-image -->
+        </div>
+        <!-- /.page-feature -->
+        {% endif %}
+        <!-- include breadcrumbs.html -->
+        <div class="inner-wrap">
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            {% include page-meta.html %}
+            {{ content }}
+            <hr />
+            <div class="page-footer">
+              {% if page.categories %}{% include page-author.html %}{% endif %} {% if page.share != false %}{% include share-this.html %}{% endif %}
+
+              {% include add-edit.html posttype="blog"%}
+            </div>
+            <!-- /.footer -->
+            <aside>
+              {% if page.comments == true %}{% include comments.html %}{% endif %}
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.inner-wrap -->
+      </article>
+      <!-- ./wrap -->
+    </div>
+    <div class="col-md-4">
+      <!-- Stories List Section -->
+      <aside class="panel panel-default">
+        <header class="panel-heading">
+          <h1>More Hack Notes</h1>
+        </header>
+        <ul class="list-unstyled panel-body">
+          {% for post in site.posts %}
+          {% if post.layout == "hacknotes" %}
+            <li class="story-item">
+              <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a> -
+              <time datetime="{{ post.date | date: " %Y-%m-%d " }}" itemprop="datePublished">
+                {{ post.date | date: "%B %d, %Y" }}
+              </time>
+            </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- /#main -->
