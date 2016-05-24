@@ -1,5 +1,6 @@
-.DS_Store
-_site/
-.sass-cache
-.c9
 .bundle
+.c9
+.DS_StOre
+private
+.sass-cache
+_site/
