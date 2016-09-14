@@ -6,7 +6,7 @@ function slugify(text) {
   return text;
 }
 
-var cfapi_url = 'http://codeforamerica.org/api/organizations/OpenSMC/projects';
+var cfapi_url = 'https://codeforamerica-api.herokuapp.com/api/organizations/OpenSMC/projects';
 
 // Go get projects! Then show them off.
 $.getJSON(cfapi_url, showProjects);
