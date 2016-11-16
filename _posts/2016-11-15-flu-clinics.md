@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Fighting the Flu with Open Data
 
