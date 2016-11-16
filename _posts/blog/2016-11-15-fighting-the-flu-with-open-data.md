@@ -1,9 +1,8 @@
 ---
 layout: blog
 author: jessica_parsons
-published: false
+published: true
 title: Fighting the Flu with Open Data
-tags: ''
 ---
 
 Each fall, the [County of San Mateo Health System](http://www.smchealth.org/) offers free and low-cost flu vaccine clinics for County residents. This year, OpenSMC has partnered with the Health System to make information about these clinics available via the free Flu Clinics app for iOS and Android smartphones and devices.
