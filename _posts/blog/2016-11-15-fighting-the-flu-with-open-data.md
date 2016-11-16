@@ -1,6 +1,6 @@
 ---
 layout: blog
-author: jessica_parsons
+author: greg_gladman
 published: true
 title: Fighting the Flu with Open Data
 ---

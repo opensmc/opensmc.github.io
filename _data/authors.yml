@@ -5,16 +5,20 @@ jessica_parsons:
 
 john_ridener:
   name: John Ridener
-  bio: ""
+  bio: "OpenSMC Brigade Founder and Local Government Partner"
   gravatar: 94fe733748ff7b71ed5e81a15829e2f9
 
 michelle_littlefield:
   name: Michelle Littlefield
-  bio: ""
+  bio: "OpenSMC Brigade Captain and Local Government Partner"
   gravatar: ""
 
 robert_harker:
   name: Robert Harker
   bio: "Open Data Evangelist and OpenSMC Storyteller"
   gravatar: ""
-
+  
+greg_gladman:
+  name: Greg Gladman
+  bio: "OpenSMC Delivery Lead"
+  gravatar: ""
