@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
-# ruby "2.2.2"
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.2.2'
 
 gem 'github-pages'
