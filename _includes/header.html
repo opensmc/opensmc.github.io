@@ -5,6 +5,13 @@
   <title>{{page.title}}</title>
   <meta name="description" content="San Mateo County locals helping San Mateo County government and local organizations open their data and create meaningful tools" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Client-side redirect to opensmc.tech -->
+  <script>
+    if (window.location.hostname == "opensmc.org") {
+      window.location.replace("https://www.opensmc.tech" + window.location.pathname);
+    }
+  </script>
+  <link rel="canonical" href="https://www.opensmc.tech{{ page.url }}">
   {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
