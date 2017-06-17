@@ -1,7 +1,7 @@
 permalink: /:categories/:title/
 markdown: kramdown
-#baseurl: /opensmc
-#url: "http://opensmc.org"
+baseurl: ''  # Root-relative path, used for subpath-hosted sites
+url: "https://www.opensmc.tech" # Canonical address for site root
 defaultbranch: master
 
 name: OpenSMC
